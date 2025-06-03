@@ -14,16 +14,25 @@ test.describe("Add list in the board", () => {
         const totalLists = await getListID.count()
         // console.log("total list:"+ totalLists)
 
-        const createListBtn = await page.getByTestId('create-list')
-        createListBtn.click()
+        const createListBtn = page.getByTestId('create-list')
+        await createListBtn.isVisible
+        await createListBtn.click()
+        
+        const n = 2
+        for(let i = 1; i <= n; i++) {
+            const listTitle = page.getByTestId("add-list-input")
+            await listTitle.fill(`list-${totalLists+i}`)
 
-        await page.getByTestId("add-list-input").fill("new list")
+            const addBtn = page.getByText("Add list")
+            await addBtn.isVisible
+            await addBtn.click()
 
-        const addBtn = await page.getByText("Add list")
-        await addBtn.isVisible
-        await addBtn.click()
+            await expect(getListID).toHaveCount(totalLists+i)
 
-        await expect(getListID).toHaveCount(totalLists+1)
+            await page.waitForTimeout(2000);
+        }
+
+        await expect(getListID).toHaveCount(totalLists+n)
 
         // const totalAddedList = await getListID.count()
         // console.log("total added list:"+ totalAddedList)
