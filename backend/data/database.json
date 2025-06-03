@@ -26,29 +26,22 @@
   "lists": [
     {
       "boardId": 1,
-      "name": "list-2",
-      "order": 0,
-      "created": "2025-06-02",
-      "id": 2
-    },
-    {
-      "boardId": 1,
       "name": "new list",
-      "order": 1,
+      "order": 0,
       "created": "2025-06-03",
       "id": 16
     },
     {
       "boardId": 1,
       "name": "new list",
-      "order": 2,
+      "order": 1,
       "created": "2025-06-03",
       "id": 17
     },
     {
       "boardId": 1,
       "name": "new list",
-      "order": 3,
+      "order": 2,
       "created": "2025-06-03",
       "id": 18
     }
