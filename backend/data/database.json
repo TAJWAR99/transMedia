@@ -4,60 +4,88 @@
       "name": "b2",
       "user": 0,
       "starred": false,
-      "created": "2024-06-05",
+      "created": "2025-06-04",
       "id": 1
     },
     {
-      "name": "board3",
+      "name": "board-2",
       "user": 0,
       "starred": false,
-      "created": "2025-06-02",
+      "created": "2025-06-04",
       "id": 2
     },
     {
-      "name": "test",
+      "name": "board-3",
       "user": 0,
       "starred": false,
-      "created": "2025-06-03",
+      "created": "2025-06-04",
       "id": 3
+    },
+    {
+      "name": "board-4",
+      "user": 0,
+      "starred": false,
+      "created": "2025-06-04",
+      "id": 4
+    },
+    {
+      "name": "board-5",
+      "user": 0,
+      "starred": false,
+      "created": "2025-06-04",
+      "id": 5
+    },
+    {
+      "name": "board-6",
+      "user": 0,
+      "starred": false,
+      "created": "2025-06-04",
+      "id": 6
+    },
+    {
+      "name": "board-7",
+      "user": 0,
+      "starred": false,
+      "created": "2025-06-04",
+      "id": 7
     }
   ],
   "cards": [],
   "lists": [
     {
       "boardId": 1,
-      "name": "new list",
+      "name": "list-4",
       "order": 0,
-      "created": "2025-06-03",
-      "id": 16
-    },
-    {
-      "boardId": 1,
-      "name": "list-2",
-      "order": 1,
       "created": "2025-06-04",
-      "id": 17
-    },
-    {
-      "boardId": 1,
-      "name": "list-3",
-      "order": 2,
-      "created": "2025-06-04",
-      "id": 18
+      "id": 4
     },
     {
       "boardId": 1,
       "name": "list-4",
-      "order": 3,
+      "order": 1,
       "created": "2025-06-04",
-      "id": 19
+      "id": 5
     },
     {
       "boardId": 1,
       "name": "list-5",
+      "order": 2,
+      "created": "2025-06-04",
+      "id": 6
+    },
+    {
+      "boardId": 1,
+      "name": "list-5",
+      "order": 3,
+      "created": "2025-06-04",
+      "id": 7
+    },
+    {
+      "boardId": 1,
+      "name": "list-6",
       "order": 4,
       "created": "2025-06-04",
-      "id": 20
+      "id": 8
     }
   ],
   "users": []

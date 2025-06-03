@@ -1,13 +1,14 @@
 import { test, expect, type Page } from '@playwright/test';
 
 test.beforeEach(async ({ page }) => {
-  await page.goto('http://localhost:3000/');
+  await page.goto("http://localhost:3000/");
 });
 
 test.describe("Delete list in the board", () => {
     test("Verify if list can be deleted", async({page}) => {
         const boardCard = await page.locator("#board-1")
         boardCard.click()
+        await expect(page).toHaveURL(/.*\/board\/1/);
 
         const getListID = page.getByTestId("list-placeholder")
         await expect(getListID.first()).toBeVisible() //adding buffer time

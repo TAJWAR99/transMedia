@@ -1,16 +1,17 @@
 import { test, expect, type Page } from '@playwright/test';
 
 test.beforeEach(async ({ page }) => {
-  await page.goto('http://localhost:3000/');
+  await page.goto("http://localhost:3000/");
 });
 
 test.describe("Add list in the board", () => {
     test("Verify if new list can be added", async({page}) => {
         const boardCard = await page.locator("#board-1")
         boardCard.click()
+        await expect(page).toHaveURL(/.*\/board\/1/);
 
         const getListID = page.getByTestId("list-placeholder")
-        await expect(getListID.first()).toBeVisible(); //adding buffer time
+        await page.waitForTimeout(1000) //adding buffer time
         const totalLists = await getListID.count()
         // console.log("total list:"+ totalLists)
 
@@ -32,6 +33,7 @@ test.describe("Add list in the board", () => {
             await page.waitForTimeout(2000);
         }
 
+        //Verify n-times successful list creation
         await expect(getListID).toHaveCount(totalLists+n)
 
         // const totalAddedList = await getListID.count()
