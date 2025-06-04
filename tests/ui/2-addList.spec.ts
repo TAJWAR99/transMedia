@@ -34,7 +34,7 @@ test.describe("Add list in the board", () => {
         }
 
         //Verify n-times successful list creation
-        await expect(getListID).toHaveCount(totalLists+1)
+        await expect(getListID).toHaveCount(totalLists+n)
 
         // const totalAddedList = await getListID.count()
         // console.log("total added list:"+ totalAddedList)
