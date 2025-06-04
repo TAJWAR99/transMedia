@@ -32,8 +32,7 @@ jobs:
 
       - name: Run only suite files
         run: |
-          npx playwright test tests/api/api-testSuite.spec.ts
-          npx playwright test tests/ui/ui-testSuite.spec.ts
+          npx playwright test tests/api/api-testSuite.spec.ts tests/ui/ui-testSuite.spec.ts
 
       - name: HTML report
         if: always()
