@@ -58,34 +58,6 @@
       "order": 0,
       "created": "2025-06-04",
       "id": 4
-    },
-    {
-      "boardId": 1,
-      "name": "list-4",
-      "order": 1,
-      "created": "2025-06-04",
-      "id": 5
-    },
-    {
-      "boardId": 1,
-      "name": "list-5",
-      "order": 2,
-      "created": "2025-06-04",
-      "id": 6
-    },
-    {
-      "boardId": 1,
-      "name": "list-5",
-      "order": 3,
-      "created": "2025-06-04",
-      "id": 7
-    },
-    {
-      "boardId": 1,
-      "name": "list-6",
-      "order": 4,
-      "created": "2025-06-04",
-      "id": 8
     }
   ],
   "users": []
