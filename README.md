@@ -34,3 +34,4 @@
 - Initially run `npm start` to start the local server
 - Run `npx playwright test tests/api/api-testSuite.spec.ts` for running all the API test suite in one go.
 - Run `npx playwright test tests/ui/ui-testSuite.spec.ts` for running all the UI test suite in one go.
+- To view the test report run `npx playwright show-report`.

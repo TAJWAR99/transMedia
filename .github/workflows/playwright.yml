@@ -35,3 +35,9 @@ jobs:
           npx playwright test tests/api/api-testSuite.spec.ts
           npx playwright test tests/ui/ui-testSuite.spec.ts
 
+      - name: HTML report
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: playwright-report
+          path: playwright-report/
