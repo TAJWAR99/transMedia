@@ -2,9 +2,10 @@
 
 **Notes:**
 
-- For UI and API testing, Playwright was used in this project 
-- Github workflow has been added so that when code is pushed to or pulled from the repository it will run the test suites
-- Also the test suites can be run locally
+- For UI and API testing, Playwright was used in this project. 
+- Github Action workflow has been added so that when code is pushed to or pulled from the repository it will run the test suites.
+- The workflow will create a downloadable `playwright-report` file in the Action workflow.
+- Also the test suites can be run locally.
 
 ## Project Structure
 
