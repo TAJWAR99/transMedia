@@ -2,16 +2,15 @@
 
 **Notes:**
 
-- You are free to use any popular UI test framework/tool(i.e. Selenium,Cypress)
-- You are free to use any popular API test framework/tool(i.e. Postman,Jest)
-- After complete, please upload the code in a Github repository(Please keep the repository public) and submit this [Google Form](https://forms.gle/bZEhAzZTxKpqNGPZ8)
+- For UI and API testing, Playwright was used in this project 
+- Github workflow has been added so that when code is pushed to the repository it will run the test suites
+- Also the test suites can be run locally
 
-## Pre-requisite
+## Project Structure
 
-Install the app, simply clone this project and
-
-1. `npm install`
-2. `npm start`
+- All tests are saved under **tests** folder
+- All the API related automation scripts resides in `tests/api` folder
+- All the UI related automation scripts resides in `tests/ui` folder
 
 ## Tasks
 
@@ -30,8 +29,8 @@ Install the app, simply clone this project and
 2. Delete the newly created list
 ```
 
-**Evaluation Criteria:**
+**Locally run the tests**
 
-- Project Structure(30%)
-- Best practises and clean code(40%)
-- Workable code(30%)
+- Initially run `npm start` to start the local server
+- Run `npx playwright test tests/api/api-testSuite.spec.ts` for running all the API test suite in one go.
+- Run `npx playwright test tests/ui/ui-testSuite.spec.ts` for running all the UI test suite in one go.
