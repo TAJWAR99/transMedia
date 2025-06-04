@@ -1,5 +1,5 @@
 import { test, expect, request } from '@playwright/test';
-import { TestID } from '../utils/globalValue';
+import { TestID } from './utils/globalValue';
 
 test.describe('Adding List via APICall', () => {
   let apiContext;
